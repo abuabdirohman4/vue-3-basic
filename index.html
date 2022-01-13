@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS 3</title>
+</head>
+<body>
+    <div id="vueApp">
+        <h3>Belajar Vue.Js</h3>
+        <h3>Belajar {{ subject }}</h3>
+        <p>number : {{ number }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const sample = {
+            data() {
+                return {
+                    subject: 'VueJS',
+                    number: 0
+                }
+            },
+            mounted() {
+                setInterval(()=> {
+                    this.number++
+                }, 2000)
+            }
+        }
+
+        Vue.createApp(sample).mount('#vueApp')
+    </script>
+</body>
+</html>
