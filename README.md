@@ -1,4 +1,4 @@
-# fnd-31-vue-js-3
+# Vue JS
 
 Reference from [Belajar Vuejs 3](https://www.youtube.com/playlist?list=PLCZlgfAG0GXDBWSuPnM-U3uZGgebfxPSl)
 
