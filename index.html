@@ -1,55 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue JS 3</title>
-</head>
-<body>
-    <div id="vueApp">
-        <!-- <h3>Belajar Vue.Js</h3> -->
-        <input type="text" v-model="subject">
-        <h3>Belajar {{ subject }}</h3>
-        <p>number : {{ number }}</p>
-        <!-- <button v-on:click="makeItFun()">Make it Fun</button> -->
-        <button @click="makeItFun()">Make it Fun</button>
-        <button @click="check()">Check Subject</button>
-
-        <p>Nilai : {{ nilai }}</p>
-    </div>
-
-    <script src="https://unpkg.com/vue@next"></script>
-    <script>
-        const sample = {
-            data() {
-                return {
-                    subject: 'VueJS',
-                    number: 0,
-                    nilai: 0
-                }
-            },
-            // mounted() {
-            //     setInterval(()=> {
-            //         this.number++
-            //     }, 2000)
-            // }
-            methods: {
-                makeItFun() {
-                    this.subject = this.subject + " !!!!"
-                },
-                check() {
-                    if (this.subject === "VueJS") {
-                        this.nilai = 100
-                    } else {
-                        this.nilai = -50
-                    }
-
-                }
-            }
-        }
-
-        Vue.createApp(sample).mount('#vueApp')
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
